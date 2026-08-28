@@ -46,6 +46,24 @@
 .via-secondary{--tw-gradient-stops:var(--tw-gradient-from),#3b82f6,var(--tw-gradient-to,rgba(59,130,246,0))}
 .to-secondary{--tw-gradient-to:#3b82f6}
 .to-info{--tw-gradient-to:#06b6d4}
+/* Tailwind v3-only utilities not present in the v2 static build */
+.bg-black\/40{background-color:rgba(0,0,0,.4)}
+.bg-black\/50{background-color:rgba(0,0,0,.5)}
+.bg-white\/10{background-color:rgba(255,255,255,.1)}
+.bg-white\/20{background-color:rgba(255,255,255,.2)}
+.bg-white\/80{background-color:rgba(255,255,255,.8)}
+.border-white\/10{border-color:rgba(255,255,255,.1)}
+.border-white\/30{border-color:rgba(255,255,255,.3)}
+.h-\[50vh\]{height:50vh}
+.h-\[60vh\]{height:60vh}
+.h-\[70vh\]{height:70vh}
+.h-\[90vh\]{height:90vh}
+.w-\[300px\]{width:300px}
+.z-\[100\]{z-index:100}
+.z-\[9998\]{z-index:9998}
+.z-\[9999\]{z-index:9999}
+.backdrop-blur{backdrop-filter:blur(8px)}
+.backdrop-blur-lg{backdrop-filter:blur(16px)}
 </style>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');* { font-family: 'Cairo', sans-serif; }body { background: #f1f5f9; }.sidebar { transition: all 0.3s ease; }@media (max-width: 1023px) { .sidebar { transform: translateX(100%); } .sidebar.mobile-open { transform: translateX(0); } }.sidebar.collapsed { width: 70px; }.sidebar.collapsed .nav-text { display: none; }.sidebar.collapsed .logo-text { display: none; }.card-hover { transition: all 0.3s ease; }.card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(0,0,0,0.1); }.btn-primary { background: linear-gradient(135deg, #1e40af, #3b82f6); }.btn-success { background: linear-gradient(135deg, #059669, #10b981); }.btn-danger { background: linear-gradient(135deg, #dc2626, #ef4444); }.btn-warning { background: linear-gradient(135deg, #d97706, #f59e0b); }.modal { backdrop-filter: blur(5px); }.table-row:hover { background: #f8fafc; }@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }.animate-fade-in { animation: fadeIn 0.4s ease; }.scrollbar-hide::-webkit-scrollbar { display: none; }.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }.toast { animation: slideInLeft 0.4s ease, fadeOut 0.4s ease 4.6s forwards; }@keyframes slideInLeft { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }@keyframes fadeOut { to { opacity: 0; transform: translateX(100%); } }.calendar-day { aspect-ratio: 1; cursor: pointer; }.calendar-day:hover { background: #e0e7ff; }.calendar-day.active { background: #1e40af; color: white; }.calendar-day.today { border: 2px solid #3b82f6; }.calendar-day.weekend { background: #fef3c7; }.calendar-day.holiday { background: #fee2e2; }.calendar-day.present { background: #d1fae5; }.calendar-day.absent { background: #fee2e2; }.calendar-day.late { background: #fef3c7; }.print-only { display: none; }@media print { .no-print { display: none !important; } .print-only { display: block !important; } body { background: white; } }.tab-active { border-bottom: 2px solid #1e40af; color: #1e40af; }
